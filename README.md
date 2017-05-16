@@ -46,7 +46,9 @@ If you are using Windows it's simply `activate eda3`.
 
  We will be using widgets to create interactive visualizations. They will have been installed during your environment setup but you still need to run the following from the commandline: 
  
- `jupyter nbextension enable --py --sys-prefix widgetsnbextension`
+```bash
+jupyter nbextension enable --py --sys-prefix widgetsnbextension
+```
  
 ### 4. Test your python environment 
  
