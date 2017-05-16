@@ -8,10 +8,9 @@
 ## Before the tutorial 
 
 ### 1. Clone this repo
-1. Please send us your github username (slack Chloe or Jonathan a direct message).
-2. Check that you have set up your ssh-keys by going [here](https://github.com/settings/keys). If you don’t see any ssh keys, github has great documentation about [how to generate ssh-keys](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) and [how to add them to your account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) for your laptop operating system. 
-3. Clone this repository locally on your laptop. Go to the green **Clone or download** button at the top of the repository page and copy the ssh link. 
-4. From the command line run the command: 
+Clone this repository locally on your laptop. 
+1. Go to the green **Clone or download** button at the top of the repository page and copy the https link. 
+2. From the command line run the command: 
 
 `git clone https://github.com/cmawer/pycon-2017-eda-tutorial.git`
 ### 2. Set up your python environment 
