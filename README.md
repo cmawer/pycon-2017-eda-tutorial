@@ -40,11 +40,11 @@ We recommend using conda for managing your python environments. Specifically, we
  
  `jupyter notebook`
 
- 2. Assuming this worked, open up the notebook titled `test-my-environment.ipynb"
+ 2. Assuming this worked, open up the notebook titled `test-my-environment.ipynb`
 
  3. Once the notebook is open, go to the `Cell` menu and select `Run All`. 
  
- 4. Check that every cell in the notebook ran (i.e did not produce error as output)
+ 4. Check that every cell in the notebook ran (i.e did not produce error as output). `test-my-environment.html` shows what the notebook should look like after running. 
  
  ### 5. Prepare the backup option
 If there were errors upon running your notebook (or during any step prior), feel free to ask for help before from your fellow classmates on slack in the operating system channel relevant to you. 
