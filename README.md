@@ -18,8 +18,11 @@ git clone https://github.com/cmawer/pycon-2017-eda-tutorial.git
 
 ### 2. Set up your python environment 
 
-We recommend using conda for managing your python environments. Specifically, we like miniconda, which is the most lightweight installation. You can install miniconda here: https://conda.io/miniconda.html
- 
+#### Install conda or miniconda
+We recommend using conda for managing your python environments. Specifically, we like miniconda, which is the most lightweight installation. You can install miniconda [here](https://conda.io/miniconda.html). However, the full [anaconda](https://www.continuum.io/downloads) is good for beginners as it comes with many packages already installed. 
+
+#### Create your environment 
+
  Once installed, you can create the environment necessary for running this tutorial by running the following command from the command line in the `setup/` directory of this repository: 
  
 ```bash
@@ -32,15 +35,31 @@ then:
 conda env create -f environment.yml
 ```
 
- This command will create a new environment named `eda3`. To activate the environment you can run this command from any directory:
+ This command will create a new environment named `eda3`. If you are on Windows or run into errors, try:
  
-```bash
-source activate eda3
-```
+ ```bash
+ conda env create -f environment-noversions.yml
+ ```
+ 
+ If that still doesn't work:
+  
+ ```bash
+ conda env create -f environment-basic.yml
+ ```
+ 
+ If that doesn't work, you'll have to trouble shoot! 
+ 
+ #### Activate your environment
+ To activate the environment you can run this command from any directory:
+ 
+ `source activate eda3` (Mac/Linux)
+ 
+ `activate eda3` (Windows)
+ 
+ #### Non-conda users 
+ 
 
-If you are using Windows it's simply `activate eda3`. 
-
- If you are experienced in python and do not use conda, the `requirements.txt` file is available also in the `setup/` directory for pip installation.
+If you are experienced in python and do not use conda, the `requirements.txt` file is available also in the `setup/` directory for pip installation.
  
 ### 3. Enable `ipywidgets`
 
