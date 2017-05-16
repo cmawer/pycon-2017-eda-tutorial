@@ -13,7 +13,7 @@
 3. Clone this repository locally on your laptop. Go to the green **Clone or download** button at the top of the repository page and copy the ssh link. 
 4. From the command line run the command: 
 
-`git clone [paste link here]`
+`git clone https://github.com/cmawer/pycon-2017-eda-tutorial.git`
 ### 2. Set up your python environment 
 
 We recommend using conda for managing your python environments. Specifically, we like miniconda, which is the most lightweight installation. You can install miniconda here: https://conda.io/miniconda.html
