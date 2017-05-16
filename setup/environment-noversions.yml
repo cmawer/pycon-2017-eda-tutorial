@@ -1,0 +1,103 @@
+name: eda3
+channels:
+- conda-forge
+- defaults
+dependencies:
+- ipython-sql
+- ipywidgets
+- jupyter_contrib_core
+- jupyter_contrib_nbextensions
+- jupyter_highlight_selected_word
+- jupyter_latex_envs
+- jupyter_nbextensions_configurator
+- mpld3
+- prettytable
+- anaconda-client
+- bleach
+- clyent
+- cycler
+- decorator
+- entrypoints
+- freetype
+- html5lib
+- icu
+- ipykernel
+- ipython
+- ipython_genutils
+- jinja2
+- jsonschema
+- jupyter_client
+- jupyter_consoled
+- jupyter_core
+- libpng
+- markupsafe
+- matplotlib
+- mistune
+- mkl
+- nbconvert
+- nbformat
+- notebook
+- numpy
+- openssl
+- pandas
+- pandocfilters
+- path.py
+- patsy
+- pexpect
+- pickleshare
+- pip
+- pivottablejs
+- prompt_toolkit
+- psutil
+- pygments
+- pyparsing
+- pyqt
+- python=3.6.1=0
+- python-dateutil
+- pytz
+- pyyaml
+- pyzmq
+- qgrid
+- qt
+- qtconsole
+- requests
+- scikit-learn
+- scipy
+- seaborn
+- setuptools
+- simplegeneric
+- sip
+- six
+- sqlalchemy
+- sqlite
+- sqlparse
+- statsmodels
+- testpath
+- tk
+- tornado
+- tqdm
+- traitlets
+- wcwidth
+- wheel
+- widgetsnbextension
+- xz
+- yaml
+- zlib
+- pip:
+  - branca
+  - colorama
+  - folium
+  - ipython-genutils
+  - jupyter-client
+  - jupyter-console
+  - jupyter-contrib-core
+  - jupyter-contrib-nbextensions
+  - jupyter-core
+  - jupyter-highlight-selected-word
+  - jupyter-latex-envs
+  - jupyter-nbextensions-configurator
+  - missingno
+  - nbdime
+  - pandas-profiling
+  - prompt-toolkit
+
