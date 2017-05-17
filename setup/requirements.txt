@@ -2,7 +2,7 @@ anaconda-client==1.6.3
 appnope==0.1.0
 bleach==1.5.0
 branca==0.2.0
-clyent==1.2.2
+clyent==1.2.1
 colorama==0.3.9
 cycler==0.10.0
 decorator==4.0.11
