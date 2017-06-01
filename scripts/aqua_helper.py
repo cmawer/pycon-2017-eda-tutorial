@@ -87,7 +87,9 @@ def plot_map(df, variable, time_period=None, log=False,
 
 
 def map_over_time(df, variable, time_periods, log=False,
-                  threshold_scale=None, legend_name=None):
+                  threshold_scale=None, legend_name=None,
+                  geo=r'../data/aquastat/world.json'):
+
     time_slider = widgets.SelectionSlider(options=time_periods.tolist(),
                                           value=time_periods[0],
                                           description='Time period:',
@@ -97,7 +99,8 @@ def map_over_time(df, variable, time_periods, log=False,
                      variable=widgets.fixed(variable),
                      time_period=time_slider, log=widgets.fixed(log),
                      legend_name=widgets.fixed(legend_name),
-                     threshold_scale=widgets.fixed(threshold_scale));
+                     threshold_scale=widgets.fixed(threshold_scale),
+                     geo=widgets.fixed(geo));
 
 
 def plot_hist(df, variable, bins=None, xlabel=None, by=None,
