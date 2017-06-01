@@ -63,8 +63,9 @@ def variable_slice(df, variable):
 
 
 def plot_map(df, variable, time_period=None, log=False,
-             legend_name=None, threshold_scale=None):
-    geo = r'../data/aquastat/world.json'
+             legend_name=None, threshold_scale=None,
+             geo=r'../data/aquastat/world.json'):
+
     if time_period:
         df = time_slice(df, time_period).reset_index()
     else:
