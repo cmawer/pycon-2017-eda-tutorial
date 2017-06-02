@@ -105,9 +105,15 @@ def map_over_time(df, variable, time_periods, log=False,
 
 def plot_hist(df, variable, bins=None, xlabel=None, by=None,
               ylabel=None, title=None, logx=False, ax=None):
+    if not bins:
+        bins = 20
+
     if not ax:
         fig, ax = plt.subplots(figsize=(12, 8))
     if logx:
+        if df[variable].min() <=0:
+            df[variable] = df[variable] - df[variable].min() + 1
+            print('Warning: data <=0 exists, data transformed by %0.2g before plotting' % (- df[variable].min() + 1))
         bins = np.logspace(np.log10(df[variable].min()),
                            np.log10(df[variable].max()), bins)
         ax.set_xscale("log")
@@ -190,10 +196,12 @@ def two_hist(df, variable, bins=50,
     plt.close()
     return fig
 
-def hist_over_var(df, variables, bins=50,
+def hist_over_var(df, variables, bins=50, first_choice=None,
                   ylabel='Number of countries', title=None):
+    if not first_choice:
+        first_choice = variables[0]
     variable_slider = widgets.Dropdown(options=variables.tolist(),
-                                       value=variables[0],
+                                       value=first_choice,
                                        description='Variable:',
                                        disabled=False,
                                        button_style='')
