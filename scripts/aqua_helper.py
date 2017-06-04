@@ -64,7 +64,7 @@ def variable_slice(df, variable):
 
 def plot_map(df, variable, time_period=None, log=False,
              legend_name=None, threshold_scale=None,
-             geo=r'../data/aquastat/world.json'):
+             geo=r'../../data/aquastat/world.json'):
 
     if time_period:
         df = time_slice(df, time_period).reset_index()
@@ -88,7 +88,7 @@ def plot_map(df, variable, time_period=None, log=False,
 
 def map_over_time(df, variable, time_periods, log=False,
                   threshold_scale=None, legend_name=None,
-                  geo=r'../data/aquastat/world.json'):
+                  geo=r'../../data/aquastat/world.json'):
 
     time_slider = widgets.SelectionSlider(options=time_periods.tolist(),
                                           value=time_periods[0],
