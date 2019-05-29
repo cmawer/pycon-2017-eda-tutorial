@@ -1,6 +1,7 @@
 import pandas as pd
 import folium
 from matplotlib import pyplot as plt
+import matplotlib as mpl
 import numpy as np
 
 def time_slice(df, time_period):
@@ -74,16 +75,16 @@ def plot_map(df, variable, time_period=None, log=False,
     if log:
         df[variable] = df[variable].apply(np.log)
 
-    map = folium.Map(location=[34, -45], zoom_start=2,
+    fmap = folium.Map(location=[34, -45], zoom_start=2,
                      width=1200, height=600)
-    map.choropleth(geo_path=geo,
+    fmap.choropleth(geo_path=geo,
                    data=df,
                    columns=['country', variable],
                    key_on='feature.properties.name', reset=True,
                    fill_color='PuBuGn', fill_opacity=0.7, line_opacity=0.2,
                    legend_name=legend_name if legend_name else variable,
                    threshold_scale=threshold_scale)
-    return map
+    return fmap
 
 
 def map_over_time(df, variable, time_periods, log=False,
