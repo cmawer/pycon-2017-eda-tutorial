@@ -11,7 +11,6 @@ ipywebrtc==0.4.3
 ipywidgets==7.4.2
 itsdangerous==1.1.0
 jedi==0.13.1
-Jinja2==2.10
 jmespath==0.9.3
 jsonschema==3.0.0a3
 jupyter==1.0.0
@@ -29,7 +28,7 @@ matplotlib==2.2.3
 missingno==0.4.1
 nbconvert==5.4.1
 nbformat==4.4.0
-notebook==5.7.2
+notebook==5.7.8
 numpy==1.15.1
 palettable==3.1.1
 pandas==0.23.4
