@@ -22,7 +22,7 @@ jupyter-core==4.4.0
 jupyter-highlight-selected-word==0.2.0
 jupyter-latex-envs==1.4.4
 jupyter-nbextensions-configurator==0.4.0
-jupyterlab==0.35.4
+jupyterlab==1.2.21
 jupyterlab-server==0.2.0
 matplotlib==2.2.3
 missingno==0.4.1
