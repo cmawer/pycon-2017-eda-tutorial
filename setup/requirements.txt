@@ -4,7 +4,7 @@ ipykernel==5.1.0
 ipyleaflet==0.9.1
 ipympl==0.2.1
 ipyscales==0.3.0
-ipython==7.2.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 ipyvolume==0.5.1
 ipywebrtc==0.4.3
