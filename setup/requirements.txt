@@ -26,7 +26,7 @@ jupyterlab==0.35.4
 jupyterlab-server==0.2.0
 matplotlib==2.2.3
 missingno==0.4.1
-nbconvert==5.4.1
+nbconvert==6.5.1
 nbformat==4.4.0
 notebook==5.7.8
 numpy==1.15.1
